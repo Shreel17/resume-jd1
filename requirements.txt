@@ -1,0 +1,52 @@
+# fastapi
+# uvicorn
+# pymongo
+# chromadb>=0.4.22
+# python-dotenv
+# pydantic
+# pdfplumber
+# rapidfuzz
+# openai
+# python-jose
+# passlib[bcrypt]==1.7.4
+# bcrypt==3.2.2
+# email-validator
+# pydantic[email]
+# python-multipart
+
+# #frontend requirements
+# streamlit
+# requests
+# pandas
+# matplotlib
+# plotly
+
+# Backend
+fastapi
+uvicorn
+gunicorn
+
+pymongo
+chromadb>=0.6.0
+python-dotenv
+pydantic>=2.0
+pydantic-settings
+pdfplumber
+rapidfuzz
+openai
+python-jose
+passlib[bcrypt]
+bcrypt==4.0.1
+email-validator
+pydantic[email]
+python-multipart
+sentence-transformers
+python-docx
+
+# Frontend
+streamlit
+requests
+pandas
+matplotlib
+plotly
+numpy>=2.1.0
