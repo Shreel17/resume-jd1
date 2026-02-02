@@ -15,9 +15,20 @@ st.set_page_config(
 
 inject_custom_css()   # <-- ADD THIS LINE ONLY
 
+
+# 🔐 ALWAYS initialize session state FIRST
 if "token" not in st.session_state:
+    st.session_state.token = None
+
+if "auth_page" not in st.session_state:
+    st.session_state.auth_page = True
+
+
+if st.session_state.token is None:
     auth_page()
 else:
+    st.session_state.auth_page = False
+
     st.sidebar.title("TalentSync")
     choice = st.sidebar.radio(
         "Navigation",
@@ -33,8 +44,9 @@ else:
     elif choice == "Analytics":
         analytics_page()
     else:
-        del st.session_state["token"]
+        st.session_state.token = None
         st.rerun()
+
 
 
 
