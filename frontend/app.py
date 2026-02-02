@@ -1,10 +1,11 @@
 import streamlit as st
-from auth import auth_page
-from dashboard import dashboard
-from upload import upload_page
-from jd_match import jd_page
-from analytics import analytics_page
-from styles import inject_custom_css
+# Purane imports ko replace karein:
+from frontend.auth import auth_page
+from frontend.dashboard import dashboard
+from frontend.upload import upload_page
+from frontend.jd_match import jd_page
+from frontend.analytics import analytics_page
+from frontend.styles import inject_custom_css
 
 st.set_page_config(
     page_title="TalentSync",
@@ -34,5 +35,6 @@ else:
     else:
         del st.session_state["token"]
         st.rerun()
+
 
 
