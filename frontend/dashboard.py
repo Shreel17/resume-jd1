@@ -1,5 +1,5 @@
 import streamlit as st
-from styles import inject_custom_css
+from frontend.styles import inject_custom_css
 
 def dashboard():
     inject_custom_css()
@@ -15,3 +15,4 @@ def dashboard():
 
     with col3:
         st.markdown("<div class='card'>📊 Analytics</div>", unsafe_allow_html=True)
+
