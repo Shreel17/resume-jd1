@@ -1,6 +1,7 @@
 import requests
 
-BASE_URL = "http://127.0.0.1:8000"
+#BASE_URL = "http://127.0.0.1:8000"
+BASE_URL="https://resume-jd1-gxf7g9hmiew2ren3rrit7.streamlit.app"
 
 def signup(email, password):
     return requests.post(
@@ -38,3 +39,4 @@ def match_jd(jd_text, company, token):
         json=payload,
         headers=headers
     )
+
