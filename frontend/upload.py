@@ -1,5 +1,5 @@
 import streamlit as st
-from api import upload_resumes
+from frontend.api import upload_resumes
 
 def upload_page():
     st.header("📤 Upload Resumes")
@@ -41,4 +41,5 @@ def upload_page():
         if res.status_code == 200:
             st.success("Resumes uploaded successfully")
         else:
+
             st.error(f"Upload failed: {res.text}")
