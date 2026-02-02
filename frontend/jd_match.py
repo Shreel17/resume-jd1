@@ -1,5 +1,5 @@
 import streamlit as st
-from api import match_jd
+from frontend.api import match_jd
 
 def jd_page():
     st.header("📌 Job Description Matching")
@@ -14,4 +14,5 @@ def jd_page():
                 with st.expander(r["name"] or "Candidate"):
                     st.write("Skills:", r["skills"])
                     st.write("Experience:", r["experience"])
+
                     st.metric("Match Score", f"{r['match_score']}%")
