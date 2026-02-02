@@ -1,5 +1,5 @@
 import streamlit as st
-from api import signup, login
+from frontend.api import signup, login
 
 def auth_page():
     st.title("🔐 TalentSync – Recruiter Access")
@@ -27,3 +27,4 @@ def auth_page():
                 st.success("Account created. Please login.")
             else:
                 st.error("User already exists")
+
